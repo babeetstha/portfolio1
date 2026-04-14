@@ -5,9 +5,7 @@ import { FiGithub, FiLinkedin, FiMail, FiDownload } from 'react-icons/fi'
 const roles = [
   'Software Engineer',
   'SQL Developer',
-  'ETL Specialist',
   'Backend Developer',
-  'Data Engineer',
 ]
 
 export default function Hero() {
@@ -111,7 +109,7 @@ export default function Hero() {
           </a>
           <a
             href="#"
-            className="px-8 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 hover:scale-105 transition-all duration-200 flex items-center gap-2"
+            className="px-8 py-3 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/25 hover:scale-105 transition-all duration-200 flex items-center gap-2"
           >
             <FiDownload /> Download CV
           </a>
@@ -126,7 +124,7 @@ export default function Hero() {
         >
           {[
             { icon: <FiGithub size={22} />, href: 'https://github.com/babeetstha', label: 'GitHub' },
-            { icon: <FiLinkedin size={22} />, href: 'https://linkedin.com', label: 'LinkedIn' },
+            { icon: <FiLinkedin size={22} />, href: 'https://www.linkedin.com/in/babit-shrestha-052837178/', label: 'LinkedIn' },
             { icon: <FiMail size={22} />, href: 'mailto:babeetstha@gmail.com', label: 'Email' },
           ].map(s => (
             <a

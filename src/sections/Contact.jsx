@@ -63,7 +63,7 @@ export default function Contact() {
                 <a href="https://github.com/babeetstha" className="p-3 rounded-xl bg-white/5 text-gray-300 hover:text-white hover:bg-white/10 transition-all" aria-label="GitHub">
                   <FiGithub size={20} />
                 </a>
-                <a href="https://linkedin.com" className="p-3 rounded-xl bg-white/5 text-gray-300 hover:text-blue-400 hover:bg-blue-500/10 transition-all" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/babit-shrestha-052837178/" className="p-3 rounded-xl bg-white/5 text-gray-300 hover:text-blue-400 hover:bg-blue-500/10 transition-all" aria-label="LinkedIn">
                   <FiLinkedin size={20} />
                 </a>
                 <a href="mailto:babeetstha@gmail.com" className="p-3 rounded-xl bg-white/5 text-gray-300 hover:text-red-400 hover:bg-red-500/10 transition-all" aria-label="Email">
