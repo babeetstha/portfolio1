@@ -28,8 +28,10 @@ export default function Hero() {
       if (displayed.length > 0) {
         timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 60)
       } else {
-        setRoleIndex(i => (i + 1) % roles.length)
-        setTyping(true)
+        timeout = setTimeout(() => {
+          setRoleIndex(i => (i + 1) % roles.length)
+          setTyping(true)
+        }, 300)
       }
     }
     return () => clearTimeout(timeout)
