@@ -26,9 +26,9 @@ export default function About() {
             <GlassCard className="p-8">
               <div className="flex items-center gap-2 mb-4 text-blue-400">
                 <FiMapPin />
-                <span className="text-gray-400">Kathmandu, Nepal</span>
+                <span className="text-gray-600 dark:text-gray-400">Kathmandu, Nepal</span>
               </div>
-              <p className="text-gray-300 leading-relaxed text-base">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
                 Detail-oriented Software Engineer with hands-on experience in SQL development, database design, and ETL processes within enterprise environments. Skilled in writing optimized queries, stored procedures, and functions to support high-performance applications. Experienced in Pentaho Data Integration for building reliable data pipelines. Strong analytical mindset with a solid academic background in Information Technology and a passion for solving complex data problems.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
@@ -60,7 +60,7 @@ export default function About() {
                   <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                     {stat.value}
                   </div>
-                  <div className="text-gray-400">{stat.label}</div>
+                  <div className="text-gray-600 dark:text-gray-400">{stat.label}</div>
                 </GlassCard>
               </motion.div>
             ))}

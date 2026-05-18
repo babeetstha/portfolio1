@@ -51,7 +51,7 @@ export default function Experience() {
               className={`relative flex mb-12 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
             >
               {/* Dot */}
-              <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 ring-4 ring-gray-950 z-10 top-6" />
+              <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 ring-4 ring-white dark:ring-gray-950 z-10 top-6" />
 
               {/* Content */}
               <div className={`ml-16 md:ml-0 ${i % 2 === 0 ? 'md:pr-8 md:w-1/2' : 'md:pl-8 md:w-1/2 md:ml-auto'}`}>
@@ -61,16 +61,16 @@ export default function Experience() {
                       <h3 className={`text-lg font-bold bg-gradient-to-r ${exp.color} bg-clip-text text-transparent`}>
                         {exp.role}
                       </h3>
-                      <p className="text-gray-300 font-medium">{exp.company}</p>
+                      <p className="text-gray-700 dark:text-gray-300 font-medium">{exp.company}</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-gray-400 text-sm">{exp.duration}</p>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm">{exp.duration}</p>
                       <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">{exp.type}</span>
                     </div>
                   </div>
                   <ul className="space-y-2">
                     {exp.responsibilities.map((r, ri) => (
-                      <li key={ri} className="flex gap-2 text-gray-400 text-sm">
+                      <li key={ri} className="flex gap-2 text-gray-600 dark:text-gray-400 text-sm">
                         <span className="text-blue-400 mt-1 flex-shrink-0">▸</span>
                         {r}
                       </li>

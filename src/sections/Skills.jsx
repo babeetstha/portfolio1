@@ -52,10 +52,10 @@ function SkillBar({ name, level, color, delay }) {
   return (
     <div className="mb-4">
       <div className="flex justify-between mb-1">
-        <span className="text-gray-300 text-sm">{name}</span>
-        <span className="text-gray-500 text-xs">{level}%</span>
+        <span className="text-gray-700 dark:text-gray-300 text-sm">{name}</span>
+        <span className="text-gray-600 dark:text-gray-500 text-xs">{level}%</span>
       </div>
-      <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
+      <div className="h-2 bg-gray-300 dark:bg-gray-800 rounded-full overflow-hidden">
         <motion.div
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
@@ -70,7 +70,7 @@ function SkillBar({ name, level, color, delay }) {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-gray-900/30">
+    <section id="skills" className="py-20 bg-gray-100/70 dark:bg-gray-900/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle title="Skills" subtitle="Technologies and tools I work with" />
 
