@@ -32,8 +32,8 @@ export default function Contact() {
             className="space-y-4"
           >
             <GlassCard className="p-6">
-              <h3 className="text-xl font-semibold mb-4 text-white">Get In Touch</h3>
-              <p className="text-gray-400 mb-6">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Get In Touch</h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
                 I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
               </p>
 
@@ -43,8 +43,8 @@ export default function Contact() {
                     <FiMail size={20} />
                   </div>
                   <div>
-                    <p className="text-gray-500 text-xs">Email</p>
-                    <p className="text-gray-200 group-hover:text-blue-400 transition-colors">babeetstha@gmail.com</p>
+                    <p className="text-gray-500 dark:text-gray-500 text-xs">Email</p>
+                    <p className="text-gray-800 dark:text-gray-200 group-hover:text-blue-400 transition-colors">babeetstha@gmail.com</p>
                   </div>
                 </a>
 
@@ -53,20 +53,20 @@ export default function Contact() {
                     <FiPhone size={20} />
                   </div>
                   <div>
-                    <p className="text-gray-500 text-xs">Phone</p>
-                    <p className="text-gray-200">+977 9803258844</p>
+                    <p className="text-gray-500 dark:text-gray-500 text-xs">Phone</p>
+                    <p className="text-gray-800 dark:text-gray-200">+977 9803258844</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-6 flex gap-4">
-                <a href="https://github.com/babeetstha" className="p-3 rounded-xl bg-white/5 text-gray-300 hover:text-white hover:bg-white/10 transition-all" aria-label="GitHub">
+                <a href="https://github.com/babeetstha" className="p-3 rounded-xl bg-white/70 dark:bg-white/5 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-all" aria-label="GitHub">
                   <FiGithub size={20} />
                 </a>
-                <a href="https://www.linkedin.com/in/babit-shrestha-052837178/" className="p-3 rounded-xl bg-white/5 text-gray-300 hover:text-blue-400 hover:bg-blue-500/10 transition-all" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/babit-shrestha-052837178/" className="p-3 rounded-xl bg-white/70 dark:bg-white/5 text-gray-700 dark:text-gray-300 hover:text-blue-400 hover:bg-blue-500/10 transition-all" aria-label="LinkedIn">
                   <FiLinkedin size={20} />
                 </a>
-                <a href="mailto:babeetstha@gmail.com" className="p-3 rounded-xl bg-white/5 text-gray-300 hover:text-red-400 hover:bg-red-500/10 transition-all" aria-label="Email">
+                <a href="mailto:babeetstha@gmail.com" className="p-3 rounded-xl bg-white/70 dark:bg-white/5 text-gray-700 dark:text-gray-300 hover:text-red-400 hover:bg-red-500/10 transition-all" aria-label="Email">
                   <FiMail size={20} />
                 </a>
               </div>
@@ -83,19 +83,19 @@ export default function Contact() {
             <GlassCard className="p-6">
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-gray-400 text-sm mb-1" htmlFor="name">Name</label>
+                  <label className="block text-gray-600 dark:text-gray-400 text-sm mb-1" htmlFor="name">Name</label>
                   <input
                     id="name"
                     name="name"
                     value={form.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-gray-800/50 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 rounded-xl bg-white dark:bg-gray-800/50 border border-gray-300 dark:border-white/10 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
                     placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-400 text-sm mb-1" htmlFor="email">Email</label>
+                  <label className="block text-gray-600 dark:text-gray-400 text-sm mb-1" htmlFor="email">Email</label>
                   <input
                     id="email"
                     name="email"
@@ -103,12 +103,12 @@ export default function Contact() {
                     value={form.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-gray-800/50 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+                    className="w-full px-4 py-3 rounded-xl bg-white dark:bg-gray-800/50 border border-gray-300 dark:border-white/10 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-400 text-sm mb-1" htmlFor="message">Message</label>
+                  <label className="block text-gray-600 dark:text-gray-400 text-sm mb-1" htmlFor="message">Message</label>
                   <textarea
                     id="message"
                     name="message"
@@ -116,7 +116,7 @@ export default function Contact() {
                     value={form.message}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-gray-800/50 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-xl bg-white dark:bg-gray-800/50 border border-gray-300 dark:border-white/10 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors resize-none"
                     placeholder="Your message..."
                   />
                 </div>
